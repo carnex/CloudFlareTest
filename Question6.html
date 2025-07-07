@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question Six</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+    }
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>I want to redirect visitor with specific user agent (*MSIE 8.0* for example) to a different page. It seems this is not possible
+with Cloudflare Page Rules. Is there any other way to achieve that using Cloudflare?</h1>
+  </header>
+
+  <main>
+    <p>Hi [Customer Name],<br/>
+You are correct cloud flares page rule do not suppport user-agent based redirection. However you can achive this functionality with cloudflare workers.<br/>  
+You can howver deploy a Worker and bind it to the route you want to protect. This allows you full control over how requests are handled.<br/> 
+I have attached the documentation for cloudflare workers and headers below.<br/>
+<a href="https://developers.cloudflare.com/workers/">Workers Documentation</a>   <br/>
+<a href="https://developers.cloudflare.com/workers/static-assets/headers/">Headers Documentation</a>   <br/>
+Let me know if you'd like help deploying this Worker or customizing the logic.<br/><br/>
+
+Thank you <br/>
+Cloud Flare Support</p>
+<p>Thought Process used<br/> Developer documents, community forums</p>
+    <p><a href="index.html">← Back to Home</a></p>
+  </main>
+
+</body>
+</html>

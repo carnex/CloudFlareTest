@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question Two</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+    }
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>I’m in London, but looking at your IPs it shows that you are serving my website from California. Can that be right? Why is
+that? I thought you were supposed to serve my website from some places close to me?</h1>
+  </header>
+
+  <main>
+    <p>Hi [Customer Name],<br/>
+What you're seeing is normal behavior based on how Cloudflare works. Cloudflare routes traffic based on optimal network topology, which doesn’t always align with physical location.<br/> While this can seem counterintuitive, your traffic is being optimized for both reliability and performance.</p>
+    <p> If you're curious about which data center you're connecting to, you can use the following tool to check: <a href="https://cloudflare-test.judge.sh/">cloudflare-test.judge.sh</a>
+</p>
+    <p>I hope this helps clarify your concerns. If you have any additional questions, feel free to reach out.<br/><br/>
+Thank you,<br/>
+Cloudflare Support</p>
+     <p>Thought process used<br/> Tracerout,cloudflare-test.judge.sh </p>
+    <p><a href="index.html">← Back to Home</a></p>
+  </main>
+
+</body>
+</html>

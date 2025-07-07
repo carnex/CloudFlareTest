@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question One</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+    }
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>I am having trouble reaching my website <a href="http://example.com/">example.com</a> from different networks. Are your nameservers working properly?</h1>
+  </header>
+
+  <main>
+    <p>Hi [Customer Name],<br/>
+I checked the status of our Cloudflare nameservers and confirmed they are up and responding.<br/>
+Since you reported that <a href="http://example.com/">example.com</a> is unreachable from some networks, I investigated the issue and found the following:</p> 
+    <p>Your DNS records are correctly configured and resolving as expected.<br/>
+Your nameservers are properly set up to point to Cloudflare.<br/>
+Global DNS checks returned the expected responses.</p> 
+    <p>Given that the site is accessible from some networks but not others, this suggests a possible connectivity issue between those networks and the Cloudflare servers. I recommend reaching out to the administrators of the affected networks to investigate further.<br/> 
+If you have a machine available on one of the affected networks, I’d be happy to assist with a more detailed diagnostic using a traceroute.</p>
+     <p>In the future, if you have concerns about Cloudflare’s availability, you can also check <a href="https://www.cloudflarestatus.com/">cloudflarestatus</a> for current status updates. If you have any further questions or concerns, please feel free to reach out.</p>
+     <p>Thought process used<br/>Nslookup, https://www.cloudflarestatus.com, validatation of NS settins.</p>
+    <p><a href="index.html">← Back to Home</a></p>
+  </main>
+
+</body>
+</html>

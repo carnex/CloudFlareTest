@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question five</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+    }
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Content not Being Cached
+After activating Cloudflare on my site, I am seeing that resources on my pages are not being cached</h1>
+  </header>
+
+  <main>
+    <p>Hi [Customer Name],<br/>
+Thanks for providing the output looking at the responce header<br/>
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0, max-age=0<br/>
+I see that cache-control is set to prevent caching. <br/>The no-store in particular, tells cloudflare and other providers not to cache the resource. </p>
+     <p>To enable caching I suggest updating cache-control to something like<br/>
+Cache-Control: public, max-age=86400<br/>
+This tells cloudflare to cache the resources for 24 hours.<br/>
+For more detail, here is cloudflare's documentation on cache control<br/>
+<a href="https://developers.cloudflare.com/cache/concepts/cache-control/">DevDocument</a>
+If you have any further questions or need additional assistance, please don’t hesitate to reach out.<br/><br/>
+Thank you,<br/>
+Cloudflare Support</p>
+<p>Thought process used<br/> Analyze headers, Cloudflare Cache Rules, Documentation</p>
+    <p><a href="index.html">← Back to Home</a></p>
+  </main>
+
+</body>
+</html>

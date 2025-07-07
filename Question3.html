@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question Three</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+    }
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>I've just added a Worker on the Cloudflare Dashboard for my website: it works in the debugger but doesn't work when I
+query the site. Why is that? Is there anything to activate or anything I could check?</h1>
+  </header>
+
+  <main>
+    <p>Hi [Customer Name],<br/>
+Thanks for reaching out.
+If your Worker runs fine in the debugger but not when accessing your live site, here are a few things to check:</p>
+     <p>Confirm that your Worker is correctly bound to a route in the Workers tab.<br/>
+Ensure Cloudflare is set up to proxy traffic (orange checkmark must be enabled in your DNS settings).<br/> Workers only run when Cloudflare is proxying the request.<br/>
+Try purging the cache and make sure your route is active.</p>
+     <p>If you're still experiencing issues after these steps, please send over your Worker script and the route configuration so I can review it for you.<br/><br/>
+Thank you,<br/>
+Cloudflare Support</p>
+     <p>Thought Process used<br/> Cloudflare Dashboard, caching, proxy settings</p>
+    <p><a href="index.html">← Back to Home</a></p>
+  </main>
+
+</body>
+</html>
