@@ -36,19 +36,19 @@ After activating Cloudflare on my site, I am seeing that resources on my pages a
   </header>
 
   <main>
-    <p>Hi [Customer Name],<br/>
-Thanks for providing the output looking at the responce header<br/>
-Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0, max-age=0<br/>
-I see that cache-control is set to prevent caching. <br/>The no-store in particular, tells cloudflare and other providers not to cache the resource. </p>
-     <p>To enable caching I suggest updating cache-control to something like<br/>
-Cache-Control: public, max-age=86400<br/>
-This tells cloudflare to cache the resources for 24 hours.<br/>
-For more detail, here is cloudflare's documentation on cache control<br/>
+    <p>Hi [Customer Name],<br>
+Thanks for providing the output looking at the responce header<br>
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0, max-age=0<br>
+I see that cache-control is set to prevent caching. <br>The no-store in particular, tells cloudflare and other providers not to cache the resource. </p>
+     <p>To enable caching I suggest updating cache-control to something like<br>
+Cache-Control: public, max-age=86400<br>
+This tells cloudflare to cache the resources for 24 hours.<br>
+For more detail, here is cloudflare's documentation on cache control<br>
 <a href="https://developers.cloudflare.com/cache/concepts/cache-control/">DevDocument</a>
-If you have any further questions or need additional assistance, please don’t hesitate to reach out.<br/><br/>
-Thank you,<br/>
+If you have any further questions or need additional assistance, please don’t hesitate to reach out.<br><br>
+Thank you,<br>
 Cloudflare Support</p>
-<p>Thought process used<br/> Analyze headers, Cloudflare Cache Rules, Documentation</p>
+<p>Thought process used<br> Analyze headers, Cloudflare Cache Rules, Documentation</p>
     <p><a href="index.html">← Back to Home</a></p>
   </main>
 
